@@ -2,6 +2,10 @@
 
 ## HTML
 
+HTML5 is the latest incarnation of a very well-known standard for coding documents. Elsevier chose HTML5 over developing a new in-house standard (like DTD56). This means that the (HTML5 recommendation)[https://www.w3.org/TR/html52/] is the main resource for finding out which elements and attributes can be used where. Luckily, this recommendation is fairly readable. There is also a wealth of information available on the internet that supplements the (understanding of) the HTML5 specification. 
+
+This document does not aim to replicate the HTML5.2 specification - this is unnecessary given its quality. The aim is to highlight a number of features and to describe usage patterns. Unless specifically noted, the HTML5.2 specification has precedence.
+
 ### introduction
 
 HTML elements are used to code the visible text of a document. This produces a foundational layer. Any meaning that goes above and beyond the semantics of HTML is handled at the JSON-LD level.
