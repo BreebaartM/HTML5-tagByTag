@@ -1,0 +1,80 @@
+{
+    "document": {
+        // add properties that apply to entire document (global properties)
+        "pageHeight": "841.89pt",
+        "pageWidth": "595.28pt",
+        "fonts": [
+            {
+                "target": {
+                    "type": "elementname",
+                    "value":"p"
+                },
+                "definition": {
+                    "font-size": "10pt",
+                    "font-family": "TimesNewRomanPSMT",
+                    "font-weight": "normal"
+                }                
+            },
+            {
+                "target": {
+                    "type": "elementname",
+                    "value":"h2"
+                },
+                "definition": {
+                    "font-size": "12pt",
+                    "font-family": "TimesNewRomanPSMT",
+                    "font-weight": "bold"
+                }                
+            }
+            // specific instances of font application with different target syntax (see below for example with determining page boundary)
+        ]
+    },
+    "firstpage": {
+        // if different, add properties that apply to first page 
+    },
+    "odd-page": {
+        // if different, add properties that apply to all odd pages
+    },
+    "even-page": {
+        // if different, add properties that apply to all even pages
+    },
+    "pages": [
+        // example of how to describe boundaries of each page without misusing section element in HTML
+        {
+            "target": {
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": {
+                        "type": "FragmentSelector",
+                        "value": "e10",
+                        "refinedBy": {
+                            "selector": {
+                                "type": "TextPositionSelector",
+                                "start": 100,
+                                "end": 101
+                            }
+                        }
+                    },
+                    "endSelector": {
+                        "type": "FragmentSelector",
+                        "value": "e20",
+                        "refinedBy": {
+                            "selector": {
+                                "type": "TextPositionSelector",
+                                "start": 10,
+                                "end": 11
+                            }
+                        }
+                    }
+                }
+            },
+            "pageNumber": "1",
+            "labelPosition": {
+                "top": "81.73pt",
+                "left": "67.48pt",
+                "width": "5.04pt",
+                "height": "11.16pt"
+            }
+        }
+    ]
+}
